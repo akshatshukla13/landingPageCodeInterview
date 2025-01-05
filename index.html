@@ -1,0 +1,1325 @@
+
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="AI-generated website">
+      <meta name="theme-color" content="#ffffff">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      
+      <!-- Performance optimization: Preload critical resources -->
+      <link rel="preload" href="https://cdn.tailwindcss.com" as="script">
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" as="style">
+      
+      <!-- Core CSS -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+             colors: {
+                primary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                secondary: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+                accent: {
+                  50: '#f8f8f8',
+                  100: '#e8e8e8',
+                  200: '#d3d3d3',
+                  300: '#a3a3a3',
+                  400: '#737373',
+                  500: '#525252',
+                  600: '#404040',
+                  700: '#262626',
+                  800: '#171717',
+                  900: '#0a0a0a',
+                  950: '#030303',
+                },
+              },
+              fontFamily: {
+                sans: ['Inter', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                heading: ['Montserrat', 'Inter', 'system-ui', 'sans-serif'],
+              },
+              spacing: {
+                '18': '4.5rem',
+                '22': '5.5rem',
+                '30': '7.5rem',
+              },
+              maxWidth: {
+                '8xl': '88rem',
+                '9xl': '96rem',
+              },
+              animation: {
+                'fade-in': 'fadeIn 0.5s ease-in',
+                'fade-out': 'fadeOut 0.5s ease-out',
+                'slide-up': 'slideUp 0.5s ease-out',
+                'slide-down': 'slideDown 0.5s ease-out',
+                'slide-left': 'slideLeft 0.5s ease-out',
+                'slide-right': 'slideRight 0.5s ease-out',
+                'scale-in': 'scaleIn 0.5s ease-out',
+                'scale-out': 'scaleOut 0.5s ease-out',
+                'spin-slow': 'spin 3s linear infinite',
+                'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'bounce-slow': 'bounce 3s infinite',
+                'float': 'float 3s ease-in-out infinite',
+              },
+              keyframes: {
+                fadeIn: {
+                  '0%': { opacity: '0' },
+                  '100%': { opacity: '1' },
+                },
+                fadeOut: {
+                  '0%': { opacity: '1' },
+                  '100%': { opacity: '0' },
+                },
+                slideUp: {
+                  '0%': { transform: 'translateY(20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideDown: {
+                  '0%': { transform: 'translateY(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateY(0)', opacity: '1' },
+                },
+                slideLeft: {
+                  '0%': { transform: 'translateX(20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                slideRight: {
+                  '0%': { transform: 'translateX(-20px)', opacity: '0' },
+                  '100%': { transform: 'translateX(0)', opacity: '1' },
+                },
+                scaleIn: {
+                  '0%': { transform: 'scale(0.9)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                scaleOut: {
+                  '0%': { transform: 'scale(1.1)', opacity: '0' },
+                  '100%': { transform: 'scale(1)', opacity: '1' },
+                },
+                float: {
+                  '0%, 100%': { transform: 'translateY(0)' },
+                  '50%': { transform: 'translateY(-10px)' },
+                },
+              },
+              aspectRatio: {
+                'portrait': '3/4',
+                'landscape': '4/3',
+                'ultrawide': '21/9',
+              },
+            },
+          },
+          variants: {
+            extend: {
+              opacity: ['disabled'],
+              cursor: ['disabled'],
+              backgroundColor: ['active', 'disabled'],
+              textColor: ['active', 'disabled'],
+            },
+          },
+        }
+      </script>
+
+      <!-- Utilities and Components -->
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.13.3/cdn.min.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"></script>
+      
+      <!-- Optimized Font Loading -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+      
+      <!-- Icons -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- Base Styles -->
+      <style>
+
+      * {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+/* Webkit browsers like Chrome, Safari, newer Edge */
+*::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+          width: 0px;
+        }
+        
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+          background: #888;
+          border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+          background: #666;
+        }
+
+        /* Remove tap highlight on mobile */
+        * {
+          -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Improve text rendering */
+        body {
+          text-rendering: optimizeLegibility;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Focus outline styles */
+        :focus-visible {
+          outline: 2px solid currentColor;
+          outline-offset: 2px;
+        }
+
+        /* Print styles */
+        @media print {
+          .no-print {
+            display: none !important;
+          }
+          
+          a[href]:after {
+            content: " (" attr(href) ")";
+          }
+        }
+      </style>
+
+      <!-- Enhanced Image Handler -->
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                  const tempImage = new Image();
+                  tempImage.onload = () => {
+                    img.src = img.dataset.src;
+                    img.classList.remove('opacity-0');
+                    img.classList.add('opacity-100');
+                  };
+                  tempImage.src = img.dataset.src;
+                  img.removeAttribute('data-src');
+                  observer.unobserve(img);
+                }
+              }
+            });
+          }, {
+            rootMargin: '50px 0px',
+            threshold: 0.01
+          });
+
+          const loadImage = (img) => {
+            if ('loading' in HTMLImageElement.prototype) {
+              img.loading = 'lazy';
+            }
+            
+            img.classList.add('transition-opacity', 'duration-300', 'opacity-0');
+            
+            img.onerror = () => {
+              const width = img.getAttribute('width') || img.clientWidth || 300;
+              const height = img.getAttribute('height') || img.clientHeight || 200;
+              img.src = `https://placehold.co/${width}x${height}/DEDEDE/555555?text=Image+Unavailable`;
+              img.alt = 'Image unavailable';
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100', 'error-image');
+            };
+
+            if (img.dataset.src) {
+              imageObserver.observe(img);
+            } else {
+              img.classList.remove('opacity-0');
+              img.classList.add('opacity-100');
+            }
+          };
+
+          document.querySelectorAll('img[data-src], img:not([data-src])').forEach(loadImage);
+
+          // Watch for dynamically added images
+          new MutationObserver((mutations) => {
+            mutations.forEach(mutation => {
+              mutation.addedNodes.forEach(node => {
+                if (node.nodeType === 1) {
+                  if (node.tagName === 'IMG') {
+                    loadImage(node);
+                  }
+                  node.querySelectorAll('img').forEach(loadImage);
+                }
+              });
+            });
+          }).observe(document.body, {
+            childList: true,
+            subtree: true
+          });
+        });
+
+        // Performance monitoring
+        if ('performance' in window && 'PerformanceObserver' in window) {
+          // Create performance observer
+          const observer = new PerformanceObserver((list) => {
+            const entries = list.getEntries();
+            entries.forEach((entry) => {
+              if (entry.entryType === 'largest-contentful-paint') {
+                // console.log(`LCP: ${entry.startTime}ms`);
+              }
+              if (entry.entryType === 'first-input') {
+                // console.log(`FID: ${entry.processingStart - entry.startTime}ms`);
+              }
+              if (entry.entryType === 'layout-shift') {
+                // console.log(`CLS: ${entry.value}`);
+              }
+            });
+          });
+
+          // Observe performance metrics
+          observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+
+          // Log basic performance metrics
+          window.addEventListener('load', () => {
+            const timing = performance.getEntriesByType('navigation')[0];
+            console.log({
+              'DNS Lookup': timing.domainLookupEnd - timing.domainLookupStart,
+              'TCP Connection': timing.connectEnd - timing.connectStart,
+              'DOM Content Loaded': timing.domContentLoadedEventEnd - timing.navigationStart,
+              'Page Load': timing.loadEventEnd - timing.navigationStart
+            });
+          });
+        }
+
+        // Handle offline/online status
+        window.addEventListener('online', () => {
+          document.body.classList.remove('offline');
+          console.log('Connection restored');
+        });
+        
+        window.addEventListener('offline', () => {
+          document.body.classList.add('offline');
+          console.log('Connection lost');
+        });
+      </script>
+   </head>
+   <body class="antialiased text-gray-800 min-h-screen flex flex-col">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#main-content" 
+         class="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+         Skip to main content
+      </a>
+
+      <!-- Header -->
+      <header class="relative z-50 bg-white dark:bg-gray-900">
+        <!-- Header content goes here -->
+      </header>
+
+      <!-- Main content area -->
+      <main id="main-content" class="flex-1 relative ">
+        <!-- Content will be injected here -->
+      </main>
+
+   </body>
+</html><htmlCode>
+<div id="root">
+    <section id="navbar" class="fixed w-full top-0 z-50 bg-neutral-900 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold text-white animate__animated animate__fadeIn">
+                        CodeInterview
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition duration-300">Features</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-white transition duration-300">Pricing</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Testimonials</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300">
+                        Get Started
+                    </button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4 animate__animated animate__fadeIn">
+                <div class="flex flex-col space-y-4">
+                    <a href="#features" class="text-gray-300 hover:text-white transition duration-300">Features</a>
+                    <a href="#pricing" class="text-gray-300 hover:text-white transition duration-300">Pricing</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Testimonials</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 w-full">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            const isVisible = mobileMenu.classList.contains('hidden');
+            if (isVisible) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('animate__fadeIn');
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('animate__fadeIn');
+            }
+        });
+
+        // Close mobile menu on window resize
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    </script>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="hero" class="min-h-[70vh] bg-neutral-900 relative overflow-hidden pt-16">
+        <div class="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+        
+        <!-- Animated background elements -->
+        <div class="absolute inset-0">
+            <div class="animate-float absolute top-20 left-10 w-20 h-20 bg-blue-500/10 rounded-full blur-xl"></div>
+            <div class="animate-float-delayed absolute top-40 right-20 w-32 h-32 bg-purple-500/10 rounded-full blur-xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="flex flex-col-reverse lg:flex-row items-center justify-between pt-20 gap-12">
+                <!-- Left Content -->
+                <div class="flex-1 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate__animated animate__fadeInUp">
+                        Transform Your <span class="text-blue-500">Technical Interviews</span>
+                    </h1>
+                    <p class="text-xl text-gray-300 mb-8 animate__animated animate__fadeInUp animate__delay-1s">
+                        Real-time collaborative coding environment with integrated video conferencing, multi-language support, and comprehensive interview tools.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate__animated animate__fadeInUp animate__delay-2s">
+                        <button class="px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 text-lg font-semibold">
+                            Start Free Trial
+                        </button>
+                        <button class="px-8 py-4 border-2 border-gray-500 text-white rounded-lg hover:border-blue-500 transition duration-300 text-lg font-semibold">
+                            Watch Demo
+                        </button>
+                    </div>
+                    <div class="mt-8 text-gray-400 flex items-center gap-4 justify-center lg:justify-start animate__animated animate__fadeInUp animate__delay-3s">
+                        <div class="flex -space-x-2">
+                            <div class="w-8 h-8 rounded-full bg-blue-500"></div>
+                            <div class="w-8 h-8 rounded-full bg-green-500"></div>
+                            <div class="w-8 h-8 rounded-full bg-yellow-500"></div>
+                        </div>
+                        <span>Trusted by 1000+ companies worldwide</span>
+                    </div>
+                </div>
+
+                <!-- Right Content - Code Editor Preview -->
+                <div class="flex-1 w-full animate__animated animate__fadeInRight">
+                    <div class="bg-neutral-800 rounded-lg p-4 shadow-2xl">
+                        <div class="flex items-center gap-2 mb-4">
+                            <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                            <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        </div>
+                        <pre class="text-sm text-gray-300 font-mono">
+<code>function binarySearch(arr, target) {
+    let left = 0;
+    let right = arr.length - 1;
+    
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+        if (arr[mid] === target) return mid;
+        if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    
+    return -1;
+}</code>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .animate-float-delayed {
+            animation: float 6s ease-in-out infinite;
+            animation-delay: 2s;
+        }
+    </style>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="features" class="py-20 bg-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-white mb-4">Powerful Features for Technical Interviews</h2>
+                <p class="text-gray-300 text-xl">Everything you need to conduct seamless coding interviews</p>
+            </div>
+
+            <!-- Features Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-neutral-700 rounded-xl p-6 hover:transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp">
+                    <div class="h-12 w-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Real-Time Coding Environment</h3>
+                    <p class="text-gray-300">Syntax highlighting, auto-completion, and real-time error detection for seamless coding experience.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-neutral-700 rounded-xl p-6 hover:transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="h-12 w-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Video Conferencing</h3>
+                    <p class="text-gray-300">Built-in WebRTC powered video and audio calls for face-to-face interactions.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-neutral-700 rounded-xl p-6 hover:transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="h-12 w-12 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Anti-Cheating System</h3>
+                    <p class="text-gray-300">Advanced tab-switch detection and real-time alerts for interview integrity.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-neutral-700 rounded-xl p-6 hover:transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp">
+                    <div class="h-12 w-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Session Recording</h3>
+                    <p class="text-gray-300">Complete interview recording including code, video, and chat for later review.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-neutral-700 rounded-xl p-6 hover:transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="h-12 w-12 bg-yellow-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Automated Scheduling</h3>
+                    <p class="text-gray-300">Email notifications and calendar integration for interview management.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-neutral-700 rounded-xl p-6 hover:transform hover:scale-105 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="h-12 w-12 bg-indigo-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Collaborative Tools</h3>
+                    <p class="text-gray-300">Integrated chat and shared notes for effective communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="howItWorks" class="py-20 bg-neutral-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">How It Works</h2>
+                <p class="text-neutral-400 max-w-2xl mx-auto">Experience seamless technical interviews with our powerful platform</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-neutral-800 p-8 rounded-lg transition-transform hover:scale-105">
+                    <div class="text-violet-500 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Real-Time Coding</h3>
+                    <p class="text-neutral-400">Collaborate in real-time with syntax highlighting, auto-completion, and instant error detection.</p>
+                </div>
+
+                <div class="bg-neutral-800 p-8 rounded-lg transition-transform hover:scale-105">
+                    <div class="text-violet-500 text-4xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Video Conferencing</h3>
+                    <p class="text-neutral-400">Connect face-to-face with built-in WebRTC powered video and audio capabilities.</p>
+                </div>
+
+                <div class="bg-neutral-800 p-8 rounded-lg transition-transform hover:scale-105">
+                    <div class="text-violet-500 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Secure Environment</h3>
+                    <p class="text-neutral-400">Advanced anti-cheating mechanisms ensure interview integrity and fairness.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 grid md:grid-cols-2 gap-8">
+                <div class="bg-neutral-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-white mb-6">For Interviewers</h3>
+                    <ul class="space-y-4 text-neutral-400">
+                        <li class="flex items-start">
+                            <span class="text-violet-500 mr-2">✓</span>
+                            Custom evaluation forms and scoring
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-violet-500 mr-2">✓</span>
+                            Complete session recording and playback
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-violet-500 mr-2">✓</span>
+                            Automated email notifications and scheduling
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-neutral-800 p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold text-white mb-6">For Candidates</h3>
+                    <ul class="space-y-4 text-neutral-400">
+                        <li class="flex items-start">
+                            <span class="text-violet-500 mr-2">✓</span>
+                            Multi-language code execution support
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-violet-500 mr-2">✓</span>
+                            Integrated chat and collaborative notes
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-violet-500 mr-2">✓</span>
+                            User-friendly interface with instant feedback
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="pricing" class="py-20 bg-neutral-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-white mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-neutral-400 max-w-2xl mx-auto">Choose the perfect plan for your interview needs</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-neutral-800 rounded-lg p-8 border border-neutral-700 hover:border-violet-500 transition-all">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-4">Starter</h3>
+                        <div class="text-4xl font-bold text-white mb-4">
+                            $49<span class="text-lg text-neutral-400">/month</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Up to 20 interviews/month
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Basic code editor
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Video conferencing
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 px-4 bg-violet-600 hover:bg-violet-700 text-white rounded-lg transition-colors">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="bg-neutral-800 rounded-lg p-8 border-2 border-violet-500 transform scale-105 shadow-xl">
+                    <div class="absolute top-0 right-0 bg-violet-500 text-white px-3 py-1 rounded-bl-lg rounded-tr-lg text-sm">
+                        Popular
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-4">Professional</h3>
+                        <div class="text-4xl font-bold text-white mb-4">
+                            $99<span class="text-lg text-neutral-400">/month</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Unlimited interviews
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Advanced code editor
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Session recording
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Custom evaluation forms
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 px-4 bg-violet-600 hover:bg-violet-700 text-white rounded-lg transition-colors">
+                        Get Started
+                    </button>
+                </div>
+
+                <div class="bg-neutral-800 rounded-lg p-8 border border-neutral-700 hover:border-violet-500 transition-all">
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-white mb-4">Enterprise</h3>
+                        <div class="text-4xl font-bold text-white mb-4">
+                            Custom<span class="text-lg text-neutral-400">/month</span>
+                        </div>
+                    </div>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Custom integration
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            Dedicated support
+                        </li>
+                        <li class="flex items-center text-neutral-400">
+                            <svg class="w-5 h-5 text-violet-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path>
+                            </svg>
+                            SLA guarantee
+                        </li>
+                    </ul>
+                    <button class="w-full py-3 px-4 bg-violet-600 hover:bg-violet-700 text-white rounded-lg transition-colors">
+                        Contact Sales
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="testimonials" class="py-20 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-white mb-4">What Our Users Say</h2>
+                <p class="text-gray-300 text-xl">Trusted by leading tech companies worldwide</p>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="testimonial-slider overflow-hidden relative">
+                <div class="testimonial-wrapper flex transition-transform duration-500">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-neutral-800 rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
+                                    <span class="text-xl font-bold text-white">G</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-white font-semibold">Grace Chen</h4>
+                                    <p class="text-gray-400">Tech Lead, Google</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 italic">"This platform has revolutionized our technical interview process. The real-time collaboration features and code execution capabilities are exceptional."</p>
+                            <div class="flex text-yellow-400 mt-4">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-neutral-800 rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+                                    <span class="text-xl font-bold text-white">M</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-white font-semibold">Michael Scott</h4>
+                                    <p class="text-gray-400">HR Director, Microsoft</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 italic">"The anti-cheating features and session recording capabilities give us complete confidence in our remote interviewing process."</p>
+                            <div class="flex text-yellow-400 mt-4">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                        <div class="bg-neutral-800 rounded-2xl p-8 h-full">
+                            <div class="flex items-center mb-6">
+                                <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
+                                    <span class="text-xl font-bold text-white">S</span>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-white font-semibold">Sarah Johnson</h4>
+                                    <p class="text-gray-400">CTO, Netflix</p>
+                                </div>
+                            </div>
+                            <p class="text-gray-300 italic">"The automated scheduling and evaluation features have streamlined our entire technical hiring process. Highly recommended!"</p>
+                            <div class="flex text-yellow-400 mt-4">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Buttons -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-blue-600 p-2 rounded-full text-white hover:bg-blue-700 focus:outline-none ml-2" id="prevBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-blue-600 p-2 rounded-full text-white hover:bg-blue-700 focus:outline-none mr-2" id="nextBtn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const slider = document.querySelector('.testimonial-wrapper');
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            const slideWidth = slides[0].offsetWidth;
+            slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            currentIndex = Math.max(currentIndex - 1, 0);
+            updateSlider();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+            updateSlider();
+        });
+
+        window.addEventListener('resize', updateSlider);
+    </script>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="security" class="py-20 bg-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-white mb-4">Enterprise-Grade Security</h2>
+                <p class="text-gray-300 text-xl">Your interviews are protected by industry-leading security measures</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Security Feature 1 -->
+                <div class="bg-neutral-700 rounded-xl p-8 hover:bg-neutral-600 transition duration-300 animate__animated animate__fadeInUp">
+                    <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">End-to-End Encryption</h3>
+                    <p class="text-gray-300">All communication and data transfers are protected with military-grade encryption protocols.</p>
+                </div>
+
+                <!-- Security Feature 2 -->
+                <div class="bg-neutral-700 rounded-xl p-8 hover:bg-neutral-600 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Anti-Cheating Mechanisms</h3>
+                    <p class="text-gray-300">Advanced tab detection and real-time monitoring ensure interview integrity.</p>
+                </div>
+
+                <!-- Security Feature 3 -->
+                <div class="bg-neutral-700 rounded-xl p-8 hover:bg-neutral-600 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Role-Based Access</h3>
+                    <p class="text-gray-300">Granular access controls ensure data privacy and secure user management.</p>
+                </div>
+
+                <!-- Security Feature 4 -->
+                <div class="bg-neutral-700 rounded-xl p-8 hover:bg-neutral-600 transition duration-300 animate__animated animate__fadeInUp">
+                    <div class="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.39-2.823 1.07-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Secure Authentication</h3>
+                    <p class="text-gray-300">Multi-factor authentication and secure session management for enhanced protection.</p>
+                </div>
+
+                <!-- Security Feature 5 -->
+                <div class="bg-neutral-700 rounded-xl p-8 hover:bg-neutral-600 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Automated Backups</h3>
+                    <p class="text-gray-300">Regular encrypted backups ensure your interview data is always safe and accessible.</p>
+                </div>
+
+                <!-- Security Feature 6 -->
+                <div class="bg-neutral-700 rounded-xl p-8 hover:bg-neutral-600 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-4">Compliance & Audit</h3>
+                    <p class="text-gray-300">Comprehensive audit trails and compliance with international data protection standards.</p>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <button class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 animate__animated animate__fadeInUp">
+                    Download Security Whitepaper
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="integrations" class="py-20 bg-neutral-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-white mb-4">Seamless Integrations</h2>
+                <p class="text-gray-300 text-xl">Connect with your favorite tools and services</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Integration Card 1 -->
+                <div class="bg-neutral-800 p-6 rounded-xl hover:bg-neutral-700 transition duration-300 animate__animated animate__fadeInUp">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">GitHub</h3>
+                        <p class="text-gray-400 text-center">Code repository integration</p>
+                    </div>
+                </div>
+
+                <!-- Integration Card 2 -->
+                <div class="bg-neutral-800 p-6 rounded-xl hover:bg-neutral-700 transition duration-300 animate__animated animate__fadeInUp animate__delay-1s">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-green-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.251 11.82a3.117 3.117 0 0 0-2.328-3.01L22.911 0H8.104L11.1 8.838a3.116 3.116 0 0 0-2.244 2.988c0 1.043.52 1.967 1.313 2.536a8.279 8.279 0 0 1-1.084 1.244 8.14 8.14 0 0 1-2.55 1.647c-.834-.563-1.195-1.556-.869-2.446a3.11 3.11 0 0 0-.91-6.08 3.117 3.117 0 0 0-3.113 3.113c0 .848.347 1.626.903 2.182-.048.097-.097.195-.146.299-.465.959-.993 2.043-1.195 3.259-.403 2.432.257 4.384 1.849 5.489A5.093 5.093 0 0 0 5.999 24c1.827 0 3.682-.917 5.475-1.807 1.279-.632 2.599-1.292 3.898-1.612.48-.118.98-.187 1.508-.264 1.07-.153 2.175-.312 3.168-.89a4.482 4.482 0 0 0 2.182-3.091c.174-.994 0-1.994-.444-2.87.298-.48.465-1.042.465-1.647zm-1.355 0c0 .965-.785 1.75-1.75 1.75a1.753 1.753 0 0 1-1.085-3.126l.007-.007c.056-.042.118-.084.18-.125 0 0 .008 0 .008-.007.028-.014.055-.035.083-.05.007 0 .014-.006.021-.006.028-.014.063-.028.097-.042.035-.014.07-.027.098-.041.007 0 .013-.007.02-.007.028-.014.056-.021.084-.028.007 0 .02-.007.028-.007.034-.007.069-.014.104-.021.007 0 .02-.007.028-.007.028 0 .055-.007.083-.007h.035c.035 0 .07-.007.111-.007h.09c.028 0 .05 0 .077.007h.014c.055.007.111.014.167.028a1.766 1.766 0 0 1 1.396 1.723zM10.043 1.39h10.93l-2.509 7.4c-.104.02-.208.055-.312.09l-2.64-5.385-2.648 5.35c-.104-.034-.216-.055-.327-.076l-2.494-7.38zm4.968 9.825a3.083 3.083 0 0 0-.938-1.668l1.438-2.904 1.452 2.967c-.43.43-.743.98-.868 1.605H15.01zm-3.481-1.098c.034-.007.062-.014.097-.02h.02c.029-.008.056-.008.084-.015h.028c.028 0 .049-.007.076-.007h.271c.028 0 .049.007.07.007.014 0 .02 0 .035.007.027.007.048.007.076.014.007 0 .014 0 .028.007l.097.02h.007c.097.028.187.056.264.097h.007l.104.049c.007.007.014.007.02.007.028.014.056.034.084.048.007 0 .007.007.013.007.028.014.05.035.077.049l.007.007c.083.062.16.132.236.201l.007.007a1.747 1.747 0 0 1 .48 1.209 1.752 1.752 0 0 1-3.502 0 1.742 1.742 0 0 1 1.32-1.695zm-6.838-.049c.966 0 1.751.786 1.751 1.751s-.785 1.751-1.75 1.751-1.752-.785-1.752-1.75.786-1.752 1.751-1.752zm16.163 6.025a3.07 3.07 0 0 1-1.508 2.133c-.758.438-1.689.577-2.669.716a17.29 17.29 0 0 0-1.64.291c-1.445.355-2.834 1.05-4.182 1.717-1.724.854-3.35 1.66-4.857 1.66a3.645 3.645 0 0 1-2.154-.688c-1.529-1.056-1.453-3.036-1.272-4.12.167-1.015.632-1.966 1.077-2.877.028-.055.049-.104.077-.16.152.056.312.098.479.126-.264 1.473.486 2.994 1.946 3.745l.264.139.284-.104c1.216-.431 2.342-1.133 3.336-2.071a9.334 9.334 0 0 0 1.445-1.716c.16.027.32.034.48.034a3.117 3.117 0 0 0 3.008-2.327h1.167a3.109 3.109 0 0 0 3.01 2.327c.576 0 1.11-.16 1.57-.43.18.52.236 1.063.139 1.605z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Jenkins</h3>
+                        <p class="text-gray-400 text-center">CI/CD pipeline support</p>
+                    </div>
+                </div>
+
+                <!-- Integration Card 3 -->
+                <div class="bg-neutral-800 p-6 rounded-xl hover:bg-neutral-700 transition duration-300 animate__animated animate__fadeInUp animate__delay-2s">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24zm3.163 21.783h-.093a.513.513 0 0 1-.382-.14.513.513 0 0 1-.14-.372v-1.406c.006-.467.01-.94.01-1.416a3.692 3.692 0 0 0-.151-1.028 1.832 1.832 0 0 0-.542-.875 8.014 8.014 0 0 0 2.038-.471 4.051 4.051 0 0 0 1.466-.964c.407-.427.71-.943.885-1.506a6.77 6.77 0 0 0 .3-2.13 4.138 4.138 0 0 0-.26-1.476 3.892 3.892 0 0 0-.795-1.284 2.81 2.81 0 0 0 .162-.582c.033-.2.05-.402.05-.604 0-.26-.03-.52-.09-.773a5.309 5.309 0 0 0-.221-.763.293.293 0 0 0-.111-.02h-.11c-.23.002-.456.04-.674.111a5.34 5.34 0 0 0-.703.26 6.503 6.503 0 0 0-.661.343c-.215.127-.405.249-.573.362a9.578 9.578 0 0 0-5.143 0 13.507 13.507 0 0 0-.572-.362 6.022 6.022 0 0 0-.672-.342 4.516 4.516 0 0 0-.705-.261 2.203 2.203 0 0 0-.662-.111h-.11a.29.29 0 0 0-.11.02 5.844 5.844 0 0 0-.23.763c-.054.254-.08.513-.081.773 0 .202.017.404.051.604.033.199.086.394.16.582A3.888 3.888 0 0 0 5.702 10a4.142 4.142 0 0 0-.263 1.476 6.871 6.871 0 0 0 .292 2.12c.181.563.483 1.08.884 1.516.415.422.915.75 1.466.964.653.25 1.337.41 2.033.476a1.828 1.828 0 0 0-.452.633 2.99 2.99 0 0 0-.2.744 2.754 2.754 0 0 1-1.175.27 1.788 1.788 0 0 1-1.065-.3 2.904 2.904 0 0 1-.752-.824 3.1 3.1 0 0 0-.292-.382 2.693 2.693 0 0 0-.372-.343 1.841 1.841 0 0 0-.432-.24 1.2 1.2 0 0 0-.481-.101c-.04.001-.08.005-.12.01a.649.649 0 0 0-.162.02.408.408 0 0 0-.13.06.116.116 0 0 0-.06.1.33.33 0 0 0 .14.242c.093.074.17.131.232.171l.03.021c.133.103.261.214.382.333.112.098.213.209.3.33.09.119.168.246.231.381.073.134.15.288.231.463.188.474.522.875.954 1.145.453.243.961.364 1.476.351.174 0 .349-.01.522-.03.172-.028.343-.057.515-.091v1.743a.5.5 0 0 1-.533.521h-.062a10.286 10.286 0 1 1 6.324 0v.005z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Slack</h3>
+                        <p class="text-gray-400 text-center">Team notifications</p>
+                    </div>
+                </div>
+
+                <!-- Integration Card 4 -->
+                <div class="bg-neutral-800 p-6 rounded-xl hover:bg-neutral-700 transition duration-300 animate__animated animate__fadeInUp animate__delay-3s">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0-2a8 8 0 1 1 0-16 8 8 0 0 1 0 16zm-3.5-6h7a.5.5 0 1 1 0 1h-7a.5.5 0 1 1 0-1zm0-3h7a.5.5 0 1 1 0 1h-7a.5.5 0 1 1 0-1zm0-3h7a.5.5 0 1 1 0 1h-7a.5.5 0 0 1 0-1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Jira</h3>
+                        <p class="text-gray-400 text-center">Issue tracking</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 text-center">
+                <p class="text-gray-400 mb-8 animate__animated animate__fadeIn">More integrations coming soon!</p>
+                <button class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300 animate__animated animate__fadeInUp">
+                    View All Integrations
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="faq" class="py-20 bg-neutral-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 animate__animated animate__fadeIn">
+                <h2 class="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-300 text-xl">Everything you need to know about our platform</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="bg-neutral-700 rounded-lg animate__animated animate__fadeInUp">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white text-left">What technical requirements are needed for the platform?</h3>
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                        A modern web browser (Chrome, Firefox, Safari) with webcam and microphone access. Stable internet connection with minimum 1Mbps upload/download speed.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="bg-neutral-700 rounded-lg animate__animated animate__fadeInUp animate__delay-1s">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white text-left">How many programming languages are supported?</h3>
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                        We support over 40+ programming languages including Java, Python, JavaScript, C++, Ruby, and more. All languages come with syntax highlighting and auto-completion.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="bg-neutral-700 rounded-lg animate__animated animate__fadeInUp animate__delay-2s">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white text-left">How secure is the platform?</h3>
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                        We use end-to-end encryption, secure authentication, and follow industry-standard security practices. All data is encrypted at rest and in transit.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="bg-neutral-700 rounded-lg animate__animated animate__fadeInUp animate__delay-3s">
+                    <button class="faq-toggle w-full px-6 py-4 flex justify-between items-center">
+                        <h3 class="text-lg font-semibold text-white text-left">Can I integrate with my existing tools?</h3>
+                        <svg class="w-6 h-6 text-white transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-300">
+                        Yes, we offer integrations with popular tools like GitHub, Slack, Jira, and more. Custom integrations are available on Enterprise plans.
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center animate__animated animate__fadeIn">
+                <p class="text-gray-300 mb-4">Still have questions?</p>
+                <button class="bg-blue-600 text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition duration-300">
+                    Contact Support
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', () => {
+                    const content = toggle.nextElementSibling;
+                    const arrow = toggle.querySelector('svg');
+                    
+                    content.classList.toggle('hidden');
+                    arrow.classList.toggle('rotate-180');
+                    
+                    // Close other FAQs
+                    faqToggles.forEach(otherToggle => {
+                        if (otherToggle !== toggle) {
+                            const otherContent = otherToggle.nextElementSibling;
+                            const otherArrow = otherToggle.querySelector('svg');
+                            otherContent.classList.add('hidden');
+                            otherArrow.classList.remove('rotate-180');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <section id="contact" class="py-20 bg-neutral-900">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-4xl font-bold text-white mb-4">Get in Touch</h2>
+                        <p class="text-neutral-400 mb-8">Have questions about our platform? We're here to help.</p>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-violet-600/20 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-white font-semibold mb-1">Email Us</h3>
+                                    <p class="text-neutral-400">support@codeinterview.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-violet-600/20 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-white font-semibold mb-1">Location</h3>
+                                    <p class="text-neutral-400">123 Tech Street, Silicon Valley, CA 94025</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-violet-600/20 rounded-lg flex items-center justify-center mr-4">
+                                    <svg class="w-6 h-6 text-violet-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-white font-semibold mb-1">Phone</h3>
+                                    <p class="text-neutral-400">+1 (555) 123-4567</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-neutral-800 p-8 rounded-lg">
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-white mb-2" for="name">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-violet-500 text-white" placeholder="Your name">
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-2" for="email">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-violet-500 text-white" placeholder="Your email">
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-2" for="subject">Subject</label>
+                                <select id="subject" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-violet-500 text-white">
+                                    <option value="">Select a subject</option>
+                                    <option value="sales">Sales Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="demo">Request Demo</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label class="block text-white mb-2" for="message">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 bg-neutral-700 border border-neutral-600 rounded-lg focus:outline-none focus:border-violet-500 text-white" placeholder="Your message"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-violet-600 hover:bg-violet-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</htmlCode><htmlCode>
+<div id="root">
+    <footer id="footer" class="bg-neutral-900 border-t border-neutral-800">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold text-white mb-4">CodeInterview</h3>
+                    <p class="text-neutral-400 mb-4">Transform your technical interviews with our real-time collaborative platform.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutral-400 hover:text-white transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-span-1">
+                    <h4 class="text-white font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#features" class="text-neutral-400 hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#pricing" class="text-neutral-400 hover:text-white transition-colors">Pricing</a></li>
+                        <li><a href="#security" class="text-neutral-400 hover:text-white transition-colors">Security</a></li>
+                        <li><a href="#integrations" class="text-neutral-400 hover:text-white transition-colors">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h4 class="text-white font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">API Reference</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Knowledge Base</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-span-1">
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="#" class="text-neutral-400 hover:text-white transition-colors">Partners</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-neutral-800 mt-12 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-neutral-400 text-sm">
+                        © 2024 CodeInterview. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6 mt-4 md:mt-0">
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-neutral-400 hover:text-white text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+</htmlCode>
